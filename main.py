@@ -81,7 +81,7 @@ model, _ = torch.hub.load(
 )
 
 # Читаем файлы из папки
-for txt_file in Path('the_rules_of_dark_waters').glob('*.txt'):
+for txt_file in Path('text_files').glob('*.txt'):
     with open(txt_file, 'r', encoding='utf-8') as f:
         text = f.read()
 
